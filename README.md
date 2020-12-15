@@ -22,7 +22,7 @@ For that, it deploys 3 smart contracts that autonomously enforce Nagoya Protocol
 1. Git clone this repo 
 
 ```bash
-git clone ...
+git clone https://github.com/bschorchit/consensys-bootcamp-final-project.git
 ```
 
 2. Create a .env in the project directory that looks like this:
