@@ -7,7 +7,7 @@ This project aims to draft of how would such implementation look like on the Eth
   
 For that, it deploys 3 smart contracts that autonomously enforce Nagoya Protocol compliance following a simplified version of the brazilian national biodiversity law specification.   
 1. `ProductToken` - The first one is a ERC-721 that allows for the creation of NFTs that represent the real life products manufactured by companies. At the moment of creation, the creator needs to specify wether the product has natural ingredients (is biodiversity based) or no.  
-2. `ProductStore` - The second one is a marketplace where such products (NFTs) can be sold and bought. For every sale made, the marketplace checks if the product is biodiversity based and then, if it's, it autonomously sends 1% of the product owner's revenue to a biodiversity fund. It also takes another 1% of the product owner's revenue for the contract owner, because well... no marketplace is for free.:stuck_out_tongue_winking_eye:  
+2. `ProductStore` - The second one is a marketplace where such products (NFTs) can be sold and bought. For every sale made, the marketplace checks if the product is biodiversity based and then, if it's, it autonomously sends 1% of the product owner's revenue to a biodiversity fund. It also takes another 1% of the product owner's revenue for the contract owner, just because well... marketplaces usually never operate for free.:stuck_out_tongue_winking_eye:  
 3. `MultiSigBioFund` - Finally, the third one is a biodiversity fund, represented by a simple multisignature wallet that decides how to spend the funds it receives in a transparent and auditable manner.
 
 
@@ -31,13 +31,13 @@ git clone https://github.com/bschorchit/consensys-bootcamp-final-project.git
 INFURA_API_KEY=YOUR_INFURA_KEY
 MNEMONIC="YOUR_TESTNET_MNEMONIC"
 
-2. Go to the client folder in the project directory and then:
+3. Go to the client folder in the project directory and then:
 
 ```bash
 npm install
 ```
 
-3. Using a different terminal window, run a private Ethereum network with Ganache CLI on `127.0.0.1:8545`:
+4. Using a different terminal window, run a private Ethereum network with Ganache CLI on `127.0.0.1:8545`:
 
 ```bash
 ganache-cli
@@ -45,35 +45,35 @@ ganache-cli
 
 Note the mnemonic printed on startup, you will need it later.
 
-2. Using a different terminal window, go to the project directory and compile and migrate the project contracts
+5. Using a different terminal window, go to the project directory and compile and migrate the project contracts
 
 ```bash
 truffle compile && truffle migrate
 ```
 
-3. In your browser open Metamask, restore accounts from the ganache-cli (using the mnemonic printed on terminal) and set newtwork to Localhost 8545
+6. In your browser open Metamask, restore accounts from the ganache-cli (using the mnemonic printed on terminal) and set newtwork to Localhost 8545
 
-4. Now back to the first terminal window, in the client folder, start the local server and go to `localhost:3000`
+7. Now back to the first terminal window, in the client folder, start the local server and go to `localhost:3000`
 
 ```bash
 npm start
 ```
 
-5. Play around! 
+8. Play around! 
 
-5. a. To sell and buy products, you need to connect with the first account on Metamask (if you imported the mnemonic) and register the contract store. Once you connect with that account, such option will show up. You can get the deployed ProductStore contract address from the terminal window where you run truffle migrate.
+9. a. To sell and buy products, you need to connect with the first account on Metamask (if you imported the mnemonic) and register the contract store. Once you connect with that account, such option will show up. You can get the deployed ProductStore contract address from the terminal window where you run truffle migrate.
 
-5. b. To interact with the Biodiversity Fund interface, you need to connect with accounts[7], accounts[8] and/or accounts[9] as those are the multisignature wallet owners. Once you connect with one of those accounts, the multisig interface will show up. 
+9. b. To interact with the Biodiversity Fund interface, you need to connect with accounts[7], accounts[8] and/or accounts[9] as those are the multisignature wallet owners. Once you connect with one of those accounts, the multisig interface will show up. 
 
 
 ## :triangular_flag_on_post: Testing
 
-1. Go to the project directory and run
+1. Go to the project directory and run:
 
 ```bash
 truffle test
 ```
-
+  
 ## :octocat: Disclaimer: 
 This dApp was made with barely any previous web development skills, so there will be bugs! Be kind and patient going through it.
 Feedback and improvement tips are always welcome :)
