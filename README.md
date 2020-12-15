@@ -27,7 +27,7 @@ For that, it deploys 3 smart contracts that autonomously enforce Nagoya Protocol
 git clone https://github.com/bschorchit/consensys-bootcamp-final-project.git
 ```
 
-2. Create a .env in the project directory that looks like this:
+2. Create a .env in the project directory that looks like this:  
 INFURA_API_KEY=YOUR_INFURA_KEY
 MNEMONIC="YOUR_TESTNET_MNEMONIC"
 
