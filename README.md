@@ -28,7 +28,7 @@ git clone https://github.com/bschorchit/consensys-bootcamp-final-project.git
 ```
 
 2. Create a .env in the project directory that looks like this:  
-INFURA_API_KEY=YOUR_INFURA_KEY
+INFURA_API_KEY=YOUR_INFURA_KEY  
 MNEMONIC="YOUR_TESTNET_MNEMONIC"
 
 3. Go to the client folder in the project directory and then:
