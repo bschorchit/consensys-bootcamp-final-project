@@ -8,7 +8,7 @@
     "react-dom": "16.11.0",
     "react-scripts": "3.2.0",
     "rimble-ui": "^0.14.0",
-    "styled-components": "^5.2.1",
+    "styled-components": "4.4.1",
     "web3": "1.2.2"
   },
   "scripts": {
