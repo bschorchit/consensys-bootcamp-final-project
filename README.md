@@ -1,6 +1,6 @@
-# :deciduous_tree: The First Decentralized Nagoya Protocol Compliant Marketplace
-## :united_nations: Intro
-The Nagoya Protocol is a United Nations agreement that, in very simple words, says: if a product has a natural ingredient (e.g. a flower fragrance in a shampoo), the company that manufactures the product (e.g. shampoo manufacturer) must pay a percentage of his sales (e.g. 1%) to conserve the biodiversity in the country where such natural ingredient comes from (e.g. Brazil).  
+# :deciduous_tree: The First Decentralized Nagoya Protocol Compliant Marketplace :deciduous_tree: 
+## :book: Intro
+The Nagoya Protocol is a United Nations :united_nations: agreement that, in very simple words, says: if a product has a natural ingredient (e.g. a flower fragrance in a shampoo), the company that manufactures the product (e.g. shampoo manufacturer) must pay a percentage of his sales (e.g. 1%) to conserve the biodiversity in the country where such natural ingredient comes from (e.g. Brazil).  
   
 This protocol has been signed and ratified by over 115 countries, but, as supply chains are complex and cross borders and each biodiversity provider country can set their own specifications on how much and when companies have to pay, it's quite challenging for entreprises to implement and comply with it. Besides that, governments and other stakeholders have no way to verify the revenue made abroad by those companies and need to trust that companies are indeed paying the correct amount to the biodiversity funds.  
 This project aims to draft of how would such implementation look like on the Ethereum blockchain.  
@@ -66,7 +66,7 @@ npm start
 5. b. To interact with the Biodiversity Fund interface, you need to connect with accounts[7], accounts[8] and/or accounts[9] as those are the multisignature wallet owners. Once you connect with one of those accounts, the multisig interface will show up. 
 
 
-## :chart: Testing
+## :triangular_flag_on_post: Testing
 
 1. Go to the project directory and run
 
