@@ -59,11 +59,14 @@ truffle compile && truffle migrate
 npm start
 ```
 
-8. Play around! 
+8. Play around!  
+Here is what to expect, if you imported the mnemonic from `ganache-cli` to Metamask:  
 
-9. a. To sell and buy products, you need to connect with the first account on Metamask (if you imported the mnemonic) and register the contract store. Once you connect with that account, such option will show up. You can get the deployed ProductStore contract address from the terminal window where you run truffle migrate.
+- `accounts[0]` (Account 1 in Metamask) is the contracts owner. When connect to this account, the dApp will show the `owner`interface. To sell and buy products in the `default` (regular user) interface, you need to first register the store contract address in the `owner` interface. You can get the deployed ProductStore contract address from the terminal window where you run truffle migrate.  
 
-9. b. To interact with the Biodiversity Fund interface, you need to connect with accounts[7], accounts[8] and/or accounts[9] as those are the multisignature wallet owners. Once you connect with one of those accounts, the multisig interface will show up. 
+- `accounts[1]` to `accounts[6]` (Account 2 to 7 in Metamask)  aren't special accounts. When change to connect with one of those accounts, the dApp will show the `default` store interface.  
+
+- `accounts[7]` to `accounts[9]` (Account 8 to 10 in Metamask) are multisignature wallet owners. When you connect with one of those accounts, the Biodiversity Fund interface will show up.  
 
 
 ## :triangular_flag_on_post: Testing

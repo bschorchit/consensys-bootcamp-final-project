@@ -10649,10 +10649,92 @@
       "links": {},
       "address": "0xc90fD66aEE814d63F93BC5D65cA4111F04cE9202",
       "transactionHash": "0x9f76e75bdae75a0bd975941fbbcf55a7ab6ef3c5fd164b74abfcf9bcc2f9941b"
+    },
+    "1608012625837": {
+      "events": {
+        "0xccd36b3164af0133c3c67d2e8725bab0a2353d01ecb1f4a0fc812e50875a58aa": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "productId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "seller",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "buyer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogSale",
+          "type": "event"
+        },
+        "0xf9226daf630542048a23086c6af599511aac100ec8f532793cc9697d061bed7e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "withdrawAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newBalance",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogWithdrawal",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x336df8E42BC1437CaBE32C103a7F4846aEF9918C",
+      "transactionHash": "0x555883c337938e1eff4a9cb1e986b3c95aa0bb58f7e03e0e5d7305fd249307f0"
     }
   },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-12-15T05:36:39.090Z",
+  "updatedAt": "2020-12-15T06:11:16.168Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "Bárbara Schorchit",
